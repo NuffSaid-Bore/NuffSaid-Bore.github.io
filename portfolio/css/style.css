@@ -1221,9 +1221,7 @@ app marcup (after 290px)
 
 @media (max-width: 290px) {
     /* line 363, ../scss/_markup.scss */
-    .art-app {
-        /* ----- info bar ----- */
-    }
+   
     /* line 365, ../scss/_markup.scss */
     .art-app .art-info-bar {
         width: 100vw;
@@ -1238,9 +1236,7 @@ app marcup (after 230px)
 
 @media (max-width: 230px) {
     /* line 376, ../scss/_markup.scss */
-    .art-app {
-        /* ----- menu bar ----- */
-    }
+   
     /* line 378, ../scss/_markup.scss */
     .art-app .art-menu-bar {
         width: 100vw;
@@ -1743,11 +1739,6 @@ menu bar
 
 /* line 6, ../scss/_menu-bar.scss */
 
-.art-menu-bar {
-    /* ----- main menu  ----- */
-    /* ----- language change  ----- */
-    /* ----- current page title ----- */
-}
 
 /* line 8, ../scss/_menu-bar.scss */
 
