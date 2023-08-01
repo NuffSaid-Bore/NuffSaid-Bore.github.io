@@ -285,9 +285,9 @@ $(function() {
 
     // submit-button for contact form
     $("#submit-button").click(function () {
-        var name = $("#name").val().trim();
-        var email = $("#email").val().trim();
-        var message = $("#message").val().trim();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
   
         // Create the form data object
         var formData = {
@@ -310,8 +310,6 @@ $(function() {
           error: function () {
             // Handle errors here (if any)
             // You can show an error message or take other actions
-            $(".art-error").fadeIn();
-            $("#submit-button").addClass("art-btn-error");
           },
         });
       });
