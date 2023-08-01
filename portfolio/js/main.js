@@ -283,6 +283,39 @@ $(function() {
         return false;
     });
 
+    // submit-button for contact form
+    $("#submit-button").click(function () {
+        var name = $("#name").val().trim();
+        var email = $("#email").val().trim();
+        var message = $("#message").val().trim();
+  
+        // Create the form data object
+        var formData = {
+          name: name,
+          email: email,
+          message: message,
+        };
+  
+        // Send the form data using AJAX
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: formData,
+          success: function () {
+            // On success, hide the form and show the success message
+            $(".art-submit").fadeOut(function () {
+              $(".art-success").fadeIn();
+            });
+          },
+          error: function () {
+            // Handle errors here (if any)
+            // You can show an error message or take other actions
+            $(".art-error").fadeIn();
+            $("#submit-button").addClass("art-btn-error");
+          },
+        });
+      });
+
     // portfolio filter
     $('.art-filter a').on('click', function() {
         $('.art-filter .art-current').removeClass('art-current');

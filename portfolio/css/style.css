@@ -112,7 +112,15 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.art-btn-error{
+    background-color: #ff0000; /* Red color */
+    color: #ffffff; /* White text color */
+}
 
+.art-error {
+    display: none;
+    color: #ff0000; /* Red text color for the error message */
+  }
 /* ----- title defaults ----- */
 
 /* line 23, ../scss/_common.scss */
